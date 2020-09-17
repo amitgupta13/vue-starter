@@ -6,9 +6,12 @@ new Vue({
     finishedLink: "<a href='https://google.com'>Google</a>"
   },
   methods: {
-  	sayHello: function (e) {
+  	sayHello: function () {
     	this.title = 'Hello';
       return this.title;
+    },
+    changeTitle: function (e) {
+      this.title = e.target.value;
     }
   }
 })

@@ -8,8 +8,10 @@
 </head>
 <body>
   <div id="app">
+    <input type="text" v-on:input='changeTitle'>
     <p v-once>{{title}}</p>
     <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
+    <p>Without render prevention - {{ title }}</p>
     <hr>
     <p v-html="finishedLink"></p>
   </div>
