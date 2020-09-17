@@ -1,12 +1,14 @@
 new Vue({
 	el: '#app',
   data: {
-  	title: 'Hello world!'
+  	title: 'Hello world!',
+    link: "https://google.com",
+    finishedLink: "<a href='https://google.com'>Google</a>"
   },
   methods: {
-  	changeTitle: function (e) {
-    console.log({e})
-    	this.title = e.target.value;
+  	sayHello: function (e) {
+    	this.title = 'Hello';
+      return this.title;
     }
   }
 })
